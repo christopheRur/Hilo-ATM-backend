@@ -10,6 +10,7 @@ public class Hilo {
     private Double saving;
     private Double totalBalance;
     private Double checking;
+    private Double currentBalanceSpent;
 
 
 
