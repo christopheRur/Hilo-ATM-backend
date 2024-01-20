@@ -7,10 +7,14 @@ public class Hilo {
 
     private  Integer id;
     private Double currentBalance;
-    private Double saving;
+    private Double savings;
     private Double totalBalance;
     private Double checking;
-    private Double currentBalanceSpent;
+    private Double currentBalanceSpentFromSavings;
+    private Double currentBalanceSpentFromChecking;
+    private Double checkingBalance;
+    private Double spentBalance;
+
 
 
 
