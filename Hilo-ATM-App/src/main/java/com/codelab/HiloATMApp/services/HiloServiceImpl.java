@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HiloServiceImpl implements HiloService{
     @Autowired
-    private HiloRepo hiloRepo;
+    private final HiloRepo hiloRepo;
 
     public HiloServiceImpl(HiloRepo hiloRep) {
         this.hiloRepo = hiloRep;

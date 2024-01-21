@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 public class HiloController {
-    private HiloUserServiceImpl hiloUserService;
-    private HiloServiceImpl hiloService;
+    private final HiloUserServiceImpl hiloUserService;
+    private final HiloServiceImpl hiloService;
 
     public HiloController(HiloUserServiceImpl hiloUserServ, HiloServiceImpl hiloServ) {
 
