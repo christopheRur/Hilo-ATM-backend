@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public interface HiloService {
     public Hilo computeBalanceInCheckingAccount(Hilo hilo);
     public Hilo computeBalanceInSavingAccount(Hilo hilo);
+
+    public double computeDeposited(Hilo hilo);
 }

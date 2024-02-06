@@ -14,6 +14,7 @@ public class Hilo {
     private Double currentBalanceSpentFromChecking;
     private Double checkingBalance;
     private Double spentBalance;
+    private Double depositedCash;
 
 
 

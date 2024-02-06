@@ -45,4 +45,18 @@ public class HiloServiceImpl implements HiloService{
 
         return hilo;
     }
+
+/**
+*
+   * @param hilo
+   * @return
+*/
+    @Override
+    public double computeDeposited(Hilo hilo) {
+
+        double updatedTotalBalance =hilo.getChecking() + hilo.getDepositedCash();
+
+        hilo.setDepositedCash(updatedTotalBalance);
+        return updatedTotalBalance;
+    }
 }
