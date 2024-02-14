@@ -2,6 +2,7 @@ package com.codelab.HiloATMApp.services;
 
 import com.codelab.HiloATMApp.model.Hilo;
 import com.codelab.HiloATMApp.repositories.HiloRepo;
+import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,15 +49,27 @@ public class HiloServiceImpl implements HiloService{
 
 /**
 *
-   * @param hilo
+   * @param jsonBody
    * @return
 */
     @Override
-    public double computeDeposited(Hilo hilo) {
+    public double computeDeposited(JsonObject jsonBody) {
+
+        Hilo hilo =new Hilo();
 
         double updatedTotalBalance =hilo.getChecking() + hilo.getDepositedCash();
 
         hilo.setDepositedCash(updatedTotalBalance);
         return updatedTotalBalance;
+    }
+
+/**
+*
+   * @return
+*/
+    @Override
+    public double getTotalSavings(JsonObject jsonBody) {
+
+        return computeDeposited(jsonBody);
     }
 }
