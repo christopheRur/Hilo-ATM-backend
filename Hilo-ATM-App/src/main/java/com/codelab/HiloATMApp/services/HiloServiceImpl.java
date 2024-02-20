@@ -18,12 +18,13 @@ public class HiloServiceImpl implements HiloService{
 
 
     /**
-*
+*Calculate balance in checking account
    * @param hilo
    * @return
 */
     @Override
     public Hilo computeBalanceInCheckingAccount(Hilo hilo) {
+
         double checkingBalance =hilo.getChecking() - hilo.getCurrentBalanceSpentFromChecking();
 
         hilo.setCheckingBalance(checkingBalance);
