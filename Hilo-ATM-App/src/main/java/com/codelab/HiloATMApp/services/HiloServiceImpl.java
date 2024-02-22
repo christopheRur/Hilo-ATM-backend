@@ -19,7 +19,7 @@ public class HiloServiceImpl implements HiloService{
 
     /**
 *Calculate balance in checking account
-   * @param hilo
+   * @param hilo Hilo
    * @return
 */
     @Override
